@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Matematik (Segitiga)</title>
+</head>
+
+<body>
+    <header style="background-color:  rgb(255, 121, 69); color: #FBFAF8;">
+        <h1 id="logo">Kalkulator Matematik Segitiga</h1>
+        <hr>
+        <nav class="navbar">
+            <a href="#luas-segitiga">Luas Segitiga</a>
+            <a href="#keliling-segitiga">Keliling Segitiga</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 id="intro">Welcome!</h1>
+        <p id="intro0">Selamat datang!  <br> 
+            Kalkulator Matematik Segitiga adalah <i>web apps</i> sederhana yang berfungsi
+            untuk menghitung luas dan keliling segitiga
+        </p>
+<!-- LUAS SEGITIGA -->
+        <section class="cards">
+            <h1 id="luas-segitiga" >Luas Segitiga</h1>
+            <div class="parent-container">
+                <!-- <div class="container1"> -->
+                    <img src="assets\segitiga.jpeg" alt="segitiga sama kaki">
+                    <p>Rumus luas segitiga, yaitu:</p>
+                    <p class="formula">L = 1/2 x a x t</p>
+                    <p>Keterangan:</p>
+                    <p>L = Luas</p>
+                    <p>a = panjang alas</p>
+                    <p>t = tinggi</p> 
+                    <br>
+                    <div id="result1" style="background-color: #f3cc7e;"></div>
+                    <div id="submit1" style="background-color: #ffaa00;"> </div>
+                    <p></p>
+                    <form action="" method="post" id="luas-segitigaa"></form>
+                        <h4 for="alas">Nilai Alas</h4>
+                        <input type="number" id="input-alas" name="alas" placeholder="..." required><br>
+                        <h4 for="tinggi">Nilai Tinggi </h4>
+                        <input type="number" id="input-tinggi" name="tinggi" placeholder="..." required><br>
+                            <div class="buttons">
+                                <button id="submit-button1" type="submit">Hitung</button>
+                                <button type="reset" value="reset" id="reset1">Reset</button>
+                    </form>
+                </div>
+                <!-- <div class="container2"> -->
+                </div>    
+            </div>
+        </section>
+        
+<!-- KELILING SEGITIGA -->
+        <section class="cards">
+            <h1 id="keliling-segitiga">Keliling Segitiga</h1>
+            <div class="parent-container">
+                <!-- <div class="container1"> -->
+                    <img src="assets\segitiga.jpeg" alt="segitiga sama kaki">
+                    <p>Rumus luas segitiga, yaitu:</p>
+                    <p class="formula">K = s1 + s2 + s3</p> 
+                    <p>Keterangan:</p>
+                    <p>K= Keliling</p>
+                    <p>s1 = sisi A</p>                
+                    <p>s2 = sisi B</p>                
+                    <p>s3 = sisi C</p>
+                    <br>
+                <div id="result2" style="background-color: #f3cc7e;"></div>
+                <div id="submit2" style="background-color: #ffaa00;"></div> 
+                <p></p>
+                <form action="" method="post" id="keliling-segitigaa">                       
+                    <h4 for="sisi">Nilai Sisi1</h4>
+                    <input type="number" name="perimeter-triangle1" id="input-sisi1" placeholder="..." required><br>
+                    <h4 for="sisi">Nilai Sisi2</h4>
+                    <input type="number" name="perimeter-triangle1" id="input-sisi2" placeholder="..." required><br>
+                    <h4 for="sisi">Nilai Sisi3</h4>
+                    <input type="number" name="perimeter-triangle1" id="input-sisi3" placeholder="..." required><br>
+                        <div class="buttons">
+                            <button id="submit-button2" type="submit">Hitung</button>
+                            <button type="reset" value="reset" id="reset2">Reset</button><br>
+                </form>
+                </div>
+            <!-- <div class="container2"> -->
+                    
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Philia-requelle">Github</a>
+    </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>
